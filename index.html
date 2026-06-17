@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今天吃什么</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        /* iPhone 容器 */
+        .phone-frame {
+            position: relative;
+            width: 402px;
+            height: 874px;
+            background: linear-gradient(0deg, rgba(255, 216, 61, 0.66), rgba(255, 216, 61, 0.66)),
+                        linear-gradient(180deg, #FEF7D2 0%, #FFFFFF 100%);
+        }
+
+        /* 顶部状态栏图片 */
+        .status-bar {
+            position: absolute;
+            width: 402px;
+            height: 62px;
+            left: 0.27px;
+            top: 0px;
+            background: url(image-46.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 10;
+        }
+
+        /* 松鼠厨师插画 */
+        .squirrel-chef {
+            position: absolute;
+            width: 311.55px;
+            height: 304.58px;
+            left: 41.29px;
+            top: 246.69px;
+            background: url(image-1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* 主标题 - 点击跳转 */
+        .main-title-link {
+            text-decoration: none;
+            color: #000000;
+            display: block;
+            position: absolute;
+            width: 260px;
+            height: 38px;
+            left: 71px;
+            top: 595.88px;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="status-bar"></div>
+        <div class="squirrel-chef"></div>
+        <!-- 点击标题跳转到登录页 -->
+        <a href="login.html" class="main-title-link">今天吃什么</a>
+    </div>
+</body>
+</html>
